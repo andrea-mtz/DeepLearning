@@ -1,0 +1,68 @@
+## Run cmd as Adminstrator
+## Open powershell prompt as Administrator
+
+PS C:\WINDOWS\system32> conda install -c conda-forge conda
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: C:\ProgramData\Anaconda3
+
+  added / updated specs:
+    - conda
+
+
+The following packages will be UPDATED:
+
+  conda                       pkgs/main::conda-4.8.5-py38_0 --> conda-forge::conda-4.8.5-py38h32f6830_1
+
+
+Proceed ([y]/n)? y
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+
+
+## https://towardsdatascience.com/13-conda-commands-for-data-scientists-e443d275eb89
+## Next, we want to test out environments in the powershell.
+## We will use the <conda create -n firstenv> function
+
+(base) PS C:\Users\andem> conda create -n firstenv
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.8.3
+  latest version: 4.8.5
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: C:\Users\andem\.conda\envs\firstenv
+
+
+
+Proceed ([y]/n)? y
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate firstenv
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(base) PS C:\Users\andem> conda activate firstenv
+(firstenv) PS C:\Users\andem>                                                  ## Notice that the command line now begins with (firstenv) instead of (base)
