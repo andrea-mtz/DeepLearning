@@ -110,3 +110,39 @@ Proceed ([y]/n)? y
 ##This is the step that I am stuck at. Error message:
 EnvironmentNotWritableError: The current user does not have write permissions to the target environment.
   environment location: C:\ProgramData\Anaconda3
+## Got past this by running PowerShell Prompt as Administrator which I had forgotten to do lol##
+
+
+
+(firstenv) PS C:\WINDOWS\system32> conda --version
+conda 4.8.3
+(firstenv) PS C:\WINDOWS\system32> conda update -n base -c defaults conda
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: C:\ProgramData\Anaconda3
+
+  added / updated specs:
+    - conda
+
+
+The following packages will be UPDATED:
+
+  conda                                        4.8.3-py38_0 --> 4.8.5-py38_0
+
+
+Proceed ([y]/n)? y
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(firstenv) PS C:\WINDOWS\system32> conda --version
+conda 4.8.5                                                                                 ## This is the version we wanted!
+
+
+## Next, we want to install some popular packages for data science using this format.
+(firstenv) PS C:\WINDOWS\system32> conda install conda-forge pandas
+
+
