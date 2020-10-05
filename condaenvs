@@ -1,7 +1,6 @@
-## Run cmd as Adminstrator
-## Open powershell prompt as Administrator
+## Make sure that you run the command prompt and powershell prompt as Administrator if not done so already
 
-PS C:\WINDOWS\system32> conda install -c conda-forge conda
+PS C:\WINDOWS\system32> conda install -c conda-forge conda                                   		 ## We are first going to test out package installation
 Collecting package metadata (current_repodata.json): done
 Solving environment: done
 
@@ -65,4 +64,4 @@ Executing transaction: done
 #     $ conda deactivate
 
 (base) PS C:\Users\andem> conda activate firstenv
-(firstenv) PS C:\Users\andem>                                                  ## Notice that the command line now begins with (firstenv) instead of (base)
+(firstenv) PS C:\Users\andem>                                                					  ## Notice that the command line now begins with (firstenv) instead of (base)
